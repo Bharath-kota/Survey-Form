@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">
+      freeCodeCamp Survey Form
+    </h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <div id="container">
+      <form id="survey-form">
+      <label for="name" id="name-label" class="section1" for="name"><p>Name:</p><input type="text" required name="name" id="name" placeholder="Enter your name"></label>
+      <label id="email-label" class="section1" for="email"><p>Email: </p><input type="email" name="email" id="email" required placeholder="someone@example.com"></label>
+      <label id="number-label" class="section1" for="number"><p>Age:</p> <input type="number" name="number" id="number" required max="120" min="13" placeholder="Enter your age"></label>
+      <hr>
+      <label id="dropdown-label" for="dropdown"><p>Which option best describes your current role?</p>
+        <select id="dropdown" >
+          <option>Select</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Self Employed</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <p>Would you recommend our website to your friends?</p>
+      <label for="yes"><input type="radio" name="recommendation" class="section2" checked value="yes" id="yes"><p class="reco">Yes</p></label>
+      <label for="maybe"><input type="radio" name="recommendation" class="section2" value="maybe" id="maybe"><p class="reco">Maybe</p></label>
+      <label for="no"><input type="radio" name="recommendation"  class="section2" value="no" id="no"><p class="reco">No</p></label>
+      <p>Please select your choice accordingly</p>
+      <label for="option1"><input type="checkbox" class="section2" name="multichoice" value="option1" id="option1"><p class="check">Option 1</p></label>
+      <label for="option2"><input type="checkbox" class="section2" name="multichoice" value="option2" id="option2"><p class="check">Option 2</p></label>
+      <p>Any comments or suggestions?</p>
+      <textarea type="textarea" class="textarea" id="textarea" name="textarea"></textarea>
+      <input type="submit" class="sub" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
